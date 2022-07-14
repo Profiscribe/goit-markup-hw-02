@@ -1,3 +1,13 @@
+html {
+    box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+}
+
 :root {
 --primary-text-color: #757575; 
 --title-text-color: #212121;
@@ -46,6 +56,18 @@ body {
 }
 
 /* Site nav */
+
+.container {
+    margin-left: auto;
+    margin-right: auto;
+    width: 1200px;
+    outline: 2px solid tomato;
+}
+
+/* Page header */
+.page-header {
+    background-color: #FFFFFF;
+}
 
 .site-nav .link {
     color: var(--title-text-color);
@@ -133,9 +155,11 @@ body {
     font-size: 16px;
     line-height: 1.9;
     text-decoration: none;
+    
+    
 }
 
-.primary-button {
+.hero-button {
     color: #FFFFFF;
     background-color: #2196F3;
     text-decoration: none;
@@ -143,6 +167,9 @@ body {
     font-size: 16px;
     font-weight: 700;
     line-height: 1.87;
+    padding: 10 32;
+    border-radius: 4px;
+
 }
 
 .secondary-button {
@@ -220,6 +247,4 @@ body {
     font-size: 16px;
     line-height: 1.87;
 }
-.cursor {
-    cursor: pointer;
-}
+
